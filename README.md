@@ -1,0 +1,1 @@
+# daily-kanban-sidebar-japanese
