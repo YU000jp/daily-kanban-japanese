@@ -63,7 +63,8 @@ p#sunday {
 
 
 div#container {
-  max-width: 98vw;
+  min-width: 380px;
+  max-width: 480px;
   height: 98vh;
   margin: 0 auto;
   padding: 1px;
