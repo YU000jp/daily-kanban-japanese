@@ -10,6 +10,8 @@
 
 ### Windows版インストールはこちら
 
+※解像度 2560 x 1440 以上
+
 - [https://github.com/YU000jp/daily-kanban-sidebar-japanese/releases/tag/v0.1.1](https://github.com/YU000jp/daily-kanban-sidebar-japanese/releases/tag/v0.1.1)
 
 > .exeファイルをダウンロードして、インストールをおこないます。その途中で、セキュリティで中断がかかるかもしれません。ソフトウェアの署名を実施していないため、回避して進めてください。
