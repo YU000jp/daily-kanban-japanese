@@ -11,7 +11,7 @@ const createWindow = () => {
   const mainWindow = new BrowserWindow({
     minWidth: 400,
     maxWidth: 480,
-    minHeight: 1280,
+    minHeight: 980,
     webPreferences: {
       preload: path.join(__dirname, 'app/app.ts'),
       nodeIntegration: true,
