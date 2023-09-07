@@ -4,6 +4,8 @@
 - インストールすると、サイドバーのように縦長のウィンドウが表示されます。
 - 各曜日に、項目をマウスでドラッグして使います。
 
+> --> [English version](https://github.com/YU000jp/daily-kanban-sidebar-english)
+
 ### デモ
 
   ![DailyKanban](https://github.com/YU000jp/daily-kanban-sidebar-japanese/assets/111847207/32508758-226e-4642-b8c3-1d4bf7b1a3e8)
