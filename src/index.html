@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark" />
+  <link rel="stylesheet" href="index.css" />
+  <title>カンバンボード (サイドバー タイプ)</title>
+</head>
+
+<body>
+
+  <div id="container">
+
+    <form id="createForm">
+      <input id="title" class="new-input" name="title" placeholder="🖊️ここにタスクを入力" title="今日の曜日に追加されます" />
+      <button>追 加</button>
+    </form>
+
+    <label for="title">
+      <div id="lane">
+
+        <div class="lane-item" title="月曜日">
+          <div class="lane-item-inner">
+            <div class="lane-status">
+              <p class="lane-status-name">月</p>
+            </div>
+
+            <div id="mondayList" class="tasks"></div>
+          </div>
+        </div>
+
+        <div class="lane-item" title="火曜日">
+          <div class="lane-item-inner">
+            <div class="lane-status">
+              <p class="lane-status-name">火</p>
+            </div>
+
+            <div id="tuesdayList" class="tasks"></div>
+          </div>
+        </div>
+
+        <div class="lane-item" title="水曜日">
+          <div class="lane-item-inner">
+            <div class="lane-status">
+              <p class="lane-status-name">水</p>
+            </div>
+
+            <div id="wednesdayList" class="tasks"></div>
+          </div>
+        </div>
+
+        <div class="lane-item" title="木曜日">
+          <div class="lane-item-inner">
+            <div class="lane-status">
+              <p class="lane-status-name">木</p>
+            </div>
+
+            <div id="thursdayList" class="tasks"></div>
+          </div>
+        </div>
+        <div class="lane-item" title="金曜日">
+          <div class="lane-item-inner">
+            <div class="lane-status">
+              <p class="lane-status-name">金</p>
+            </div>
+
+            <div id="fridayList" class="tasks"></div>
+          </div>
+        </div>
+        <div class="lane-item" title="土曜日">
+          <div class="lane-item-inner">
+            <div class="lane-status">
+              <p class="lane-status-name" id="saturday">土</p>
+            </div>
+
+            <div id="saturdayList" class="tasks"></div>
+          </div>
+        </div>
+        <div class="lane-item" title="日曜日">
+          <div class="lane-item-inner">
+            <div class="lane-status">
+              <p class="lane-status-name" id="sunday">日</p>
+            </div>
+
+            <div id="sundayList" class="tasks"></div>
+          </div>
+        </div>
+
+        <div class="lane-item">
+          <div class="lane-item-inner">
+            <div class="lane-status">
+              <p class="lane-status-name" id="DONE">DONE</p>
+              <button id="deleteAllDoneTask" title="DONEリストの項目をまとめてクリアします">空にする</button>
+            </div>
+
+            <div id="doneList" class="tasks" title="削除するには、この中に項目を移動させてください。"></div>
+          </div>
+        </div>
+      </div>
+
+      <br />
+
+      <details>
+        <summary>使い方</summary>
+        <div>
+          <ul>
+            <li>短い文章で入力してください。</li>
+            <li>重要な予定などを強調するには、絵文字を使って表現してください。</li>
+            <li>最初に、今日の曜日に項目が追加されます。他の曜日に移すには、項目をマウスドラッグして縦に動かしてください。</li>
+            <li>項目の編集はできません。一度、削除をおこなってください。</li>
+            <li>削除するには、一番下にあるDONEのリストに移動させてください。<small>(これはアーカイブとしての意味をもたせています)</small></li>
+          </ul>
+        </div>
+      </details>
+
+      <details>
+        <summary>注意事項</summary>
+        <div>
+          <ul>
+            <li>簡易ボードとしてお使いください。安定版ではなくベータ版です。データが消えてしまう可能性もあります。</li>
+          </ul>
+        </div>
+      </details>
+
+      <details>
+        <summary>各種設定</summary>
+        <div>
+          <ul>
+            <li><label><input type="checkbox" id="startDayOfWeek" />日曜日を先頭にする</label></li>
+            <li><label><select id="todayColoring">
+                  <option value="unset">色をつけない</option>
+                  <option value="var(--grayColor)" style="background:var(--grayColor)">グレー</option>
+                  <option value="var(--yellowColor)" style="background:var(--yellowColor)">黄色</option>
+                  <option value="var(--greenColor)" style="background:var(--greenColor)">緑色</option>
+                  <option value="var(--blueColor)" style="background:var(--blueColor)">青色</option>
+                  <option value="var(--redColor)" style="background:var(--redColor)">赤色</option>
+                  <option value="var(--orangeColor)" style="background:var(--orangeColor)">オレンジ</option>
+                </select>今日の曜日に色をつける</label></li>
+          </ul>
+        </div>
+      </details>
+  </div>
+  </label>
+  <script src="../dist/main-793d4fac.js"></script>
+</body>
+
+</html>

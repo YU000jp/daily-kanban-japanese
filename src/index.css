@@ -1,0 +1,236 @@
+@media(prefers-color-scheme:dark) {
+  :root {
+    --taskItemBackgroundColor: hsla(0, 0%, 39%, 0.25);
+    --taskItemBorderColor: hsla(0, 0%, 53%, 0.75);
+    --checkboxColor: hsla(217, 89%, 76%, 0.25);
+    --checkedColor: hsla(305, 73%, 51%, 0.25);
+    --greenColor: hsla(120, 100%, 81%, 0.1);
+    --blueColor: hsla(212, 100%, 63%, 0.1);
+    --redColor: hsla(0, 100%, 69%, 0.1);
+    --yellowColor: hsla(51, 100%, 50%, 0.1);
+    --orangeColor: hsla(39, 100%, 50%, 0.2);
+    --grayColor: hsla(0, 0%, 50%, 0.2);
+  }
+
+  div#container>label>div#lane {
+    border: var(--taskItemBorderColor) solid 1px;
+  }
+
+  p#saturday {
+    color: #4470FF;
+  }
+
+  p#sunday {
+    color: #FF5F5F;
+  }
+
+  div#lane {
+    background: #202124;
+  }
+}
+
+@media(prefers-color-scheme:light) {
+  :root {
+    --taskItemBackgroundColor: #ffffff;
+    --taskItemBorderColor: hsla(0, 0%, 0%, 0.2);
+    --checkboxColor: #f5f5f5;
+    --checkedColor: #ffc0cb;
+    --greenColor: hsla(120, 100%, 81%, 0.25);
+    --blueColor: hsla(212, 100%, 63%, 0.25);
+    --redColor: hsla(0, 100%, 69%, 0.25);
+    --yellowColor: hsla(51, 100%, 50%, 0.25);
+    --orangeColor: hsla(39, 100%, 50%, 0.25);
+    --grayColor: hsla(0, 0%, 50%, 0.25);
+  }
+
+  div#container>label>div#lane {
+    border: solid 1px;
+  }
+
+  p#saturday {
+    color: #0000FF;
+  }
+
+  p#sunday {
+    color: #FF0000;
+  }
+}
+
+p#saturday,
+p#sunday {
+  font-weight: bold;
+}
+
+
+div#container {
+  max-width: 98vw;
+  height: 98vh;
+  margin: 0 auto;
+  padding: 1px;
+  box-sizing: border-box;
+
+  >form#createForm {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+
+    >input#title {
+      box-sizing: border-box;
+      width: 260px;
+      border: .5px solid;
+    }
+
+    >button {
+      cursor: pointer;
+      border: 0;
+    }
+
+    >input#title,
+    >button {
+      padding: 10px;
+      border-radius: 5px;
+
+    }
+  }
+
+  >label>div#lane {
+    display: flex;
+    min-height: 340px;
+    flex-direction: column;
+    user-select: none;
+    border-radius: .4em;
+
+    >div.lane-item {
+      min-height: calc(98vh/12);
+      border-bottom: dotted 1px;
+
+      >div.lane-item-inner {
+        display: flex;
+        height: 100%;
+
+        >div.tasks {
+          flex: 1;
+          margin: 0;
+          padding: 10px;
+          list-style: none;
+
+          >:not(:first-child) {
+            margin-top: 10px;
+          }
+        }
+
+        >div.lane-status {
+          display: flex;
+          padding: 3.1em 10px 3.1em 10px;
+          writing-mode: vertical-rl;
+          border-right: dotted 1px;
+
+          >p.lane-status-name {
+            margin: 0.3em;
+            letter-spacing: 0.3em;
+
+            &#DONE {
+              writing-mode: horizontal-tb;
+            }
+          }
+
+          >button#deleteAllDoneTask {
+            cursor: pointer;
+            margin-top: 3em;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+div.task-item {
+  /* ドラッグ時もスタイル適用する */
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border: 1px solid var(--taskItemBorderColor);
+  background-color: var(--taskItemBackgroundColor);
+  background-clip: padding-box;
+  box-sizing: border-box;
+  cursor: grab;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+
+  & input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    margin-right: 1em;
+    border-radius: 2px;
+    background-color: var(--checkboxColor);
+    height: 1.3em;
+    width: 1.3em;
+    cursor: pointer;
+  }
+
+  >span {
+    overflow: hidden;
+    display: table-cell;
+    max-width: 193px;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &:has(input:checked) {
+    opacity: .7;
+    font-size: .9em;
+    background-color: var(--checkedColor);
+    padding-left: .5em;
+    padding-right: .5em;
+
+  }
+
+  >button {
+    display: none;
+    margin-left: auto;
+    font-size: .88em;
+    cursor: pointer;
+  }
+}
+
+div#doneList {
+  opacity: 0.8;
+  font-size: .9em;
+
+  & div.task-item>button {
+    display: block;
+  }
+
+  & div.task-item:has(input:checked) {
+    opacity: unset;
+  }
+}
+
+
+.gu-mirror {
+  position: fixed !important;
+  margin: 0 !important;
+  z-index: 9999 !important;
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+}
+
+.gu-hide {
+  display: none !important;
+}
+
+.gu-unselectable {
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
+
+.gu-transit {
+  opacity: 0.4;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+  filter: alpha(opacity=40);
+}

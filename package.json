@@ -1,0 +1,36 @@
+{
+  "name": "daily-kanban-sidebar-japanese",
+  "productName": "daily-kanban-sidebar-japanese",
+  "version": "1.0.0",
+  "description": "Electron application",
+  "main": "src/index.js",
+  "scripts": {
+    "vite": "vite",
+    "build": "vite build",
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\""
+  },
+  "keywords": [],
+  "author": {
+    "name": "YU"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "dragula": "^3.7.3",
+    "electron-squirrel-startup": "^1.0.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.4.1",
+    "@electron-forge/maker-deb": "^6.4.1",
+    "@electron-forge/maker-rpm": "^6.4.1",
+    "@electron-forge/maker-squirrel": "^6.4.1",
+    "@electron-forge/maker-zip": "^6.4.1",
+    "@electron-forge/plugin-auto-unpack-natives": "^6.4.1",
+    "electron": "26.2.0",
+    "vite": "^4.4.9"
+  }
+}
