@@ -1,21 +1,8 @@
 {
   "name": "daily-kanban-sidebar-japanese",
-  "productName": "daily-kanban-sidebar-japanese",
-  "version": "1.0.0",
-  "description": "Electron application",
   "main": "src/index.js",
   "scripts": {
-    "vite": "vite",
-    "build": "vite build",
-    "start": "electron-forge start",
-    "package": "electron-forge package",
-    "make": "electron-forge make",
-    "publish": "electron-forge publish",
-    "lint": "echo \"No linting configured\""
-  },
-  "keywords": [],
-  "author": {
-    "name": "YU"
+    "build": "vite build"
   },
   "license": "MIT",
   "dependencies": {
