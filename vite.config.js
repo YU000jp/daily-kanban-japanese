@@ -4,8 +4,7 @@ import { resolve } from 'path';
 export default defineConfig({
   resolve: {
     alias: {
-      // Electronのメインプロセス用のエントリーポイントを設定します。
-      'main': resolve(__dirname, 'src/index.js')
+      'main': resolve(__dirname, 'src/index.html')
     }
   },
   build: {
