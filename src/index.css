@@ -96,13 +96,11 @@ div#container {
 
   >label>div#lane {
     display: flex;
-    min-height: 340px;
     flex-direction: column;
     user-select: none;
     border-radius: .4em;
 
     >div.lane-item {
-      min-height: calc(98vh/12);
       border-bottom: dotted 1px;
 
       >div.lane-item-inner {
