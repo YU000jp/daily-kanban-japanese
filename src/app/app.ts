@@ -2,7 +2,7 @@ import { EventListener } from "./EventListener";
 import { Status, Task, statusMap } from "./Task";
 import { TaskCollection } from "./TaskCollection";
 import { TaskRenderer } from "./TaskRenderer";
-import { allDeleteConfirmMessage } from "./../translation";
+import { allDeleteConfirmMessage } from "./../config";
 
 function executeAtMidnight() {
   // 画面を開いたとき、および0:00に実行する処理
