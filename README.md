@@ -6,21 +6,29 @@
 
 > --> [English version](https://github.com/YU000jp/daily-kanban-sidebar-english)
 
-### 次のURLです
-
-https://yu000jp.github.io/sidebar-japanese/
-
 ### デモ
 
   ![DailyKanban](https://github.com/YU000jp/daily-kanban-sidebar-japanese/assets/111847207/32508758-226e-4642-b8c3-1d4bf7b1a3e8)
 
-※解像度 2560 x 1440 以上
+### 次のURLです
 
+https://yu000jp.github.io/sidebar-japanese/
+
+> サイドバータイプは、解像度 2560 x 1440 以上
+
+## サイドバーとして開く方法
+
+サイドバーに配置する設定をおこなってください。2種類の方法があります。
+
+1. Microsoft Edgeのサイドバーで開く
+
+2. ブラウザのアプリとしてインストールする (PWA版と言います) 
 
 ## 仕様
 
 - ブラウザがダークモードに設定されている場合は、ダークモードが適用されます。
 - サイドバーとして、ほかのウィンドウの隣に、細く縦長に表示させる想定で作りました。ウィンドウの縦幅は調整できます。
+- データの保存場所はブラウザ内(ローカル)です。
 
 ## 更新履歴
 
