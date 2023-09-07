@@ -12,10 +12,6 @@ const createWindow = () => {
     minWidth: 400,
     maxWidth: 480,
     minHeight: 980,
-    webPreferences: {
-      preload: path.join(__dirname, 'app/app.ts'),
-      nodeIntegration: true,
-    },
   });
 
   // and load the index.html of the app.
