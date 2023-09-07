@@ -1,6 +1,6 @@
 import { Status, Task, TaskObject } from "./Task";
 
-const STORAGE_KEY = "TASKS";
+const STORAGE_KEY = "daily-kanban-sidebar-japanese";
 
 export class TaskCollection {
   private readonly storage;
