@@ -8,7 +8,7 @@
 
 ## ワイド型
 
-https://yu000jp.github.io/sidebar-japanese/
+https://yu000jp.github.io/wide/Japanese/
 
 - 横長スタイルです。(今後のアップデートで2段にする予定)
 
@@ -16,7 +16,7 @@ https://yu000jp.github.io/sidebar-japanese/
 
 ## サイドバー型
 
-https://yu000jp.github.io/sidebar-japanese/
+https://yu000jp.github.io/sidebar/Japanese/
 
 - サイドバーのように細長くアプリが表示されます。
 
