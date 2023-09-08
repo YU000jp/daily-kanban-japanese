@@ -60,8 +60,6 @@ export class Task {
     if (!validate(value.id)) return false;
     if (!value.title) return false;
     if (!Object.values(statusMap).includes(value.status)) return false;
-    if (typeof value.check !== "boolean") return false;
-    if (!value.dateAndTime) return false;
     return true;
   }
 }
