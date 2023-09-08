@@ -12,6 +12,8 @@ https://yu000jp.github.io/sidebar-japanese/
 
 - 横長スタイルです。(今後のアップデートで2段にする予定)
 
+![image](https://github.com/YU000jp/daily-kanban-japanese/assets/111847207/036be664-457f-42e5-9278-f54f1c059d36)
+
 ## サイドバー型
 
 https://yu000jp.github.io/sidebar-japanese/
