@@ -6,14 +6,6 @@
 
 サイドバー型とワイド型の2種類あります。
 
-## ワイド型
-
-https://yu000jp.github.io/wide/Japanese/
-
-- 横長スタイルです。(今後のアップデートで2段にする予定)
-
-![image](https://github.com/YU000jp/daily-kanban-japanese/assets/111847207/036be664-457f-42e5-9278-f54f1c059d36)
-
 ## サイドバー型
 
 https://yu000jp.github.io/sidebar/Japanese/
@@ -24,16 +16,20 @@ https://yu000jp.github.io/sidebar/Japanese/
 
   ![DailyKanban](https://github.com/YU000jp/daily-kanban-sidebar-japanese/assets/111847207/32508758-226e-4642-b8c3-1d4bf7b1a3e8)
 
-
-
 ### サイドバーとして開く方法
 
-サイドバーに配置する設定をおこなってください。2種類の方法があります。
+サイドバーアプリとして設定するには、2種類の方法があります。
 
+1. ブラウザのアプリとしてインストールする (PWA版)
 1. Microsoft Edgeのサイドバーで開く
 
-2. ブラウザのアプリとしてインストールする (PWA版と言います) 
+## ワイド型
 
+https://yu000jp.github.io/wide/Japanese/
+
+- 横長スタイルです。(今後のアップデートで2段にする予定)
+
+![image](https://github.com/YU000jp/daily-kanban-japanese/assets/111847207/036be664-457f-42e5-9278-f54f1c059d36)
 
 ## 仕様
 
